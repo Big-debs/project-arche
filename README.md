@@ -2,7 +2,7 @@
 
 The website for Project Arche, a four-month discovery programme for children aged 5–9.
 
-**Website:** https://project-arche.oluwabukola-1974.chatgpt.site
+**Website:** https://project-arche-beta.vercel.app
 
 ## Pages
 
@@ -46,4 +46,6 @@ All four pages were checked in Chrome at viewport widths of 320, 375, 390, 600, 
 
 ## Hosting
 
-Serve `dist/` as the static website directory. The existing ChatGPT Sites deployment is described by `.openai/hosting.json`. GitHub is the source repository; a push alone does not publish a new Site version.
+Vercel project `project-arche` in Laolu's projects is connected to `Big-debs/project-arche`. The `main` branch deploys to production through Vercel's Git integration. The `vercel.json` file sets the output directory to `dist/`, with no install or build step.
+
+Vercel's existing deployment protection settings are preserved. The separate ChatGPT Sites preview is described by `.openai/hosting.json` and requires its own publishing workflow.
